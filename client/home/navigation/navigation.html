@@ -1,0 +1,30 @@
+<template name="Navigation">
+
+    <nav class="blue">
+        <!--Nav for Large screens-->
+        <div class="container hide-on-med-and-down">
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo">Charlie Pitkin</a>
+                <a href="/" data-activates="mobile" class="button-collapse right"><i class="mdi-navigation-menu"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a data-target="contactMe" class="modal-trigger" href="#contactMe">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Nav for Medium and Small screens-->
+        <div class="hide-on-large-only">
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo">Charlie Pitkin</a>
+                <a href="/" data-activates="mobile-menu" class="button-collapse right"><i class="mdi-navigation-menu"></i></a>
+                <ul class="side-nav center-align" id="mobile-menu">
+                    <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a data-target="contactMe" class="modal-trigger" href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {{> Contact}}
+
+</template>

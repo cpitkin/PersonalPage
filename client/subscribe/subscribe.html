@@ -1,0 +1,44 @@
+<template name="Subscribe">
+
+    <div class="container">
+        <div class="row">
+            <form>
+                <div class="col s12 m12 l6 offset-l3">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Get Notified</span>
+                            <div class="input-field">
+                                <i class="mdi-communication-email prefix"></i>
+                                <input id="email" type="email" class="validate"/>
+                                <label for="email">*Email</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="mdi-communication-business prefix"></i>
+                                <input id="organization" type="text" class="validate"/>
+                                <label for="organization">Company or Organization</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="mdi-editor-mode-edit prefix"></i>
+                                <textarea id="comment" class="materialize-textarea"></textarea>
+                                <label for="comment">Questions or Comments</label>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <!--{{#if submitted false}}-->
+                                <button id="formButton" class="btn btn-large waves-effect waves-light thin blue" type="submit">Submit
+                                <i class="mdi-content-send right white-text"></i>
+                                </button>
+                            <!--{{else}}-->
+                                <!--<button id="formButton" class="disabled btn-floating btn-large waves-effect waves-light blue" type="submit">-->
+                                <!--<i class="mdi-content-send white-text"></i>-->
+                                <!--</button>-->
+                            <!--{{/if}}-->
+                            <p class="right grey-text">* required</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</template>

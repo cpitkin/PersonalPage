@@ -1,0 +1,35 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+# Main platform
+meteor-platform
+insecure
+autopublish
+
+# Routing
+iron:router
+
+# Email
+email
+
+# Front End UI
+materialize:materialize
+noorderstorm:wow
+jameslefrere:madewithmeteor
+fastclick
+
+# Utilitues
+momentjs:moment
+
+# Analytics
+okgrow:analytics
+
+#Forms
+gildaspk:autoform-materialize
+aldeed:collection2
+aldeed:autoform
+
+
