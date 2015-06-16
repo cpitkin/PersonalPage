@@ -7,7 +7,7 @@
 # Main platform
 meteor-platform
 insecure
-autopublish
+#autopublish
 
 # Routing
 iron:router
@@ -21,9 +21,6 @@ noorderstorm:wow
 jameslefrere:madewithmeteor
 fastclick
 
-# Utilitues
-momentjs:moment
-
 # Analytics
 okgrow:analytics
 
@@ -32,4 +29,5 @@ gildaspk:autoform-materialize
 aldeed:collection2
 aldeed:autoform
 
-
+# Web Crawlers
+spiderable

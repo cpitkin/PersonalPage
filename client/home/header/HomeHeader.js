@@ -1,3 +1,4 @@
 Template.HomeHeader.rendered = function() {
-        $('.parallax').parallax();
+        // Initialize image slider
+        $('.slider').slider({height: 550});
 }

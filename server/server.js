@@ -1,5 +1,6 @@
 Meteor.startup(function(){
 
+    // TODO Add email functionality when some wants to reach out
     Meteor.methods({
         sendEmail: function(doc) {
 
@@ -13,7 +14,7 @@ Meteor.startup(function(){
             this.unblock();
 
             // Send the e-mail
-            // TODO add email configs
+            // TODO Add email configs
             //Email.send({
             //    to: EMAIL_HERE,
             //    from: doc.email,
@@ -24,6 +25,7 @@ Meteor.startup(function(){
         }
     });
 
+    // Technologies object to go into Mongo for home page (Server Systems Knowledge section)
     var technologies = {
         pfsense: {
             title: 'pfSense',
@@ -69,11 +71,17 @@ Meteor.startup(function(){
 
     }
 
+    // If there are no documents in the DB add them
     if(Tech.find().count() === 0){
         _.each(technologies, function(data){
             //console.log(data);
             Tech.insert(data);
         });
     }
+
+    // Publish the Tech DB so clients can subscribe to it
+    Meteor.publish('Tech', function () {
+        return Tech.find();
+    });
 
 });
