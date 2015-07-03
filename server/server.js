@@ -34,13 +34,13 @@ Meteor.startup(function(){
         },
         kvm: {
             title: 'KVM',
-            desc: 'Kernel-based Virtual Machine',
+            desc: 'Kernel Virtual Machine',
             link: 'http://www.linux-kvm.org/page/Main_Page'
 
         },
         ubuntu: {
             title: 'Ubuntu',
-            desc: 'Debian based Linux Server',
+            desc: 'Debian based Linux',
             link: 'http://www.ubuntu.com/server',
         },
         mysql: {
