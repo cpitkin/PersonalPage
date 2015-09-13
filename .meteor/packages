@@ -7,13 +7,9 @@
 # Main platform
 meteor-platform
 insecure
-#autopublish
 
 # Routing
 iron:router
-
-# Email
-email
 
 # Front End UI
 materialize:materialize
@@ -31,3 +27,9 @@ aldeed:autoform
 
 # Web Crawlers
 spiderable
+
+# Testing
+sanjo:jasmine
+velocity:html-reporter
+velocity:console-reporter
+velocity:helpers
